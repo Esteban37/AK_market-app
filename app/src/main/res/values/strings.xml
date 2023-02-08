@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MarketAppMitocodeGrupo2</string>
+
+    <!-- Activity_main -->
+    <string name="activity_main_title">FORMULARIO</string>
+    <string name="activity_main_help_names">Ingrese sus nombres</string>
+    <string name="activity_main_help_document">Ingrese su numero de documento</string>
+    <string name="activity_main_dni">DNI</string>
+    <string name="activity_main_carnet">Carnet Extranjeria</string>
+    <string name="activity_main_message_names">Ingrese sus nombres</string>
+    <string name="activity_main_message_document">Ingrese su numero de documento</string>
+    <string name="activity_menu_form">Registro</string>
+    <string name="activity_menu_list">Listado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_login_title">Iniciar sesión</string>
+    <string name="fragment_login_helper_email">Correo electrónico</string>
+    <string name="fragment_login_helper_password">Contraseña</string>
+    <string name="fragment_login_sign_in">Ingresar</string>
+    <string name="fragment_login_forget_password">Olvidé mi contraseña</string>
+    <string name="fragment_login_create_account">Crear cuenta</string>
+    <string name="fragment_login_remember_account">Recordar mi cuenta</string>
+    <string name="fragment_register_account_title">CREAR CUENTA</string>
+    <string name="fragment_register_account_help_names">Nombres</string>
+    <string name="fragment_register_account_help_last_name">Apellidos</string>
+    <string name="fragment_register_account_help_email">Correo electrónico</string>
+    <string name="fragment_register_account_help_phone">Número celular</string>
+    <string name="fragment_register_account_help_gender">Género</string>
+    <string name="fragment_register_account_help_number_doc">Número de documento</string>
+    <string name="fragment_register_account_help_password">Contraseña</string>
+    <string name="fragment_register_account_terms">Acepto los términos y condiciones</string>
+    <string name="menu_categories">Categorias</string>
+    <string name="menu_shop">Mis compras</string>
+    <string name="dialog_terms_button">He leido los terminos</string>
+    <string name="fragment_register_categories_name">Nombre de la categoria</string>
+    <string name="fragment_register_categories_camera">Camara</string>
+    <string name="fragment_register_categories_galery">Galeria</string>
+    <string name="fragment_register_categories_save">Grabar</string>
+    <string name="menu_maps">Mapas</string>
+
+</resources>

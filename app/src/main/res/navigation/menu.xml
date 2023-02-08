@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    app:startDestination="@id/categoriesFragment">
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.mitocode.marketappmitocodegrupo2.presentation.categories.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_detailCategoryFragment"
+            app:destination="@id/detailCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.mitocode.marketappmitocodegrupo2.presentation.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/detailCategoryFragment"
+        android:name="com.mitocode.marketappmitocodegrupo2.presentation.products.ProductFragment"
+        android:label="fragment_detail_category"
+        tools:layout="@layout/fragment_detail_category" >
+        <argument
+            android:name="categoryId"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_detailCategoryFragment_to_detailProductFragment"
+            app:destination="@id/detailProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.mitocode.marketappmitocodegrupo2.presentation.detail.DetailProductFragment"
+        android:label="fragment_detail_product"
+        tools:layout="@layout/fragment_detail_product" >
+        <argument
+            android:name="product"
+            app:argType="com.mitocode.marketappmitocodegrupo2.domain.model.Product"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.mitocode.marketappmitocodegrupo2.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>
