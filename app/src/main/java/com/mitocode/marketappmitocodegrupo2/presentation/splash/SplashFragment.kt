@@ -9,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.mitocode.marketappmitocodegrupo2.R
-import dagger.hilt.android.AndroidEntryPoint
 
 class SplashFragment : Fragment() {
 

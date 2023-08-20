@@ -54,10 +54,9 @@ class ProductFragment : Fragment(R.layout.fragment_detail_category) {
                     binding.tvPrice.text = "S/.${entity.price}"
 
                     binding.root.setOnClickListener {
-                        val directions = ProductFragmentDirections.actionDetailCategoryFragmentToDetailProductFragment(entity)
+                        val directions = ProductFragmentDirections.actionDetailCategoryFragmentToDetailProductFragment(arguments.categoryId, entity)
                         Navigation.findNavController(binding.root).navigate(directions)
                     }
-
                 }
             }
         }

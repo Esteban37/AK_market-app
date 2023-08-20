@@ -38,6 +38,10 @@
         android:label="fragment_detail_product"
         tools:layout="@layout/fragment_detail_product" >
         <argument
+            android:name="categoryId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
             android:name="product"
             app:argType="com.mitocode.marketappmitocodegrupo2.domain.model.Product"
             app:nullable="true"
@@ -48,4 +52,22 @@
         android:name="com.mitocode.marketappmitocodegrupo2.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/shoppingFragment"
+        android:name="com.mitocode.marketappmitocodegrupo2.presentation.shopping.ShoppingFragment"
+        android:label="fragment_shopping"
+        tools:layout="@layout/fragment_shopping" >
+        <action
+            android:id="@+id/action_shoppingFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.mitocode.marketappmitocodegrupo2.presentation.payment.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment">
+        <argument
+            android:name="shoppingCartList"
+            app:argType="com.mitocode.marketappmitocodegrupo2.domain.model.ShoppingCartList" />
+    </fragment>
 </navigation>

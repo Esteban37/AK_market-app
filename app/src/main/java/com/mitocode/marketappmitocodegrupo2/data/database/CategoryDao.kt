@@ -9,7 +9,7 @@ interface CategoryDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun save(categories:List<DbCategory>)
 
-    @Query("SELECT *FROM TableCategory")
+    @Query("SELECT * FROM TableCategory")
     fun getAll() : Flow<List<DbCategory>>
 
     @Query("SELECT COUNT(uuid) FROM TableCategory")

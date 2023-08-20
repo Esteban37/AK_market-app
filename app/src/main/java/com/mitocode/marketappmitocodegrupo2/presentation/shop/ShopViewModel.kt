@@ -5,16 +5,13 @@ import androidx.lifecycle.viewModelScope
 import com.mitocode.marketappmitocodegrupo2.data.model.RegisterCategoryRequest
 import com.mitocode.marketappmitocodegrupo2.data.model.Result
 import com.mitocode.marketappmitocodegrupo2.data.repositories.CategoryRepository
-import com.mitocode.marketappmitocodegrupo2.presentation.categories.CategoryState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
-import kotlin.coroutines.CoroutineContext
 
 @HiltViewModel
 class ShopViewModel @Inject constructor(private val categoryRepository: CategoryRepository) :

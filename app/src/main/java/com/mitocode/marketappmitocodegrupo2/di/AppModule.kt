@@ -56,7 +56,7 @@ class AppModule {
     fun provideRemoteService(okHttpClient: OkHttpClient): RemoteService {
 
         return Retrofit.Builder()
-            .baseUrl("http://18.234.189.188:3000/")
+            .baseUrl("http://35.169.242.154:3000/") // http://54.152.157.67:3000/ || http://18.234.189.188:3000/ || http://35.169.242.154:3000/
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build().create()
@@ -85,9 +85,11 @@ class AppModule {
 
     @Provides
     @Singleton
-    fun provideDao(db: AppDatabase): CategoryDao = db.categoryDao()
+    fun provideCategoryDao(db: AppDatabase) = db.categoryDao()
 
-
+    @Provides
+    @Singleton
+    fun provideShoppingCartDao(db: AppDatabase) = db.shoppingCartDao()
 }
 
 
@@ -110,4 +112,10 @@ abstract class AppBindModule {
 
     @Binds
     abstract fun bindCategoryLocallyDataSource(categoryLocallyDataSourceImp: CategoryLocallyDataSourceImp): CategoryLocallyDataSource
+
+    @Binds
+    abstract fun bindShoppingCartLocallyDataSource(shoppingCartLocallyDataSourceImp: ShoppingCartLocallyDataSourceImp): ShoppingCartLocallyDataSource
+
+    @Binds
+    abstract fun bindShoppingCartRemoteDataSource(shoppingCartRemoteDataSourceImp: ShoppingCartRemoteDataSourceImp): ShoppingCartRemoteDataSource
 }

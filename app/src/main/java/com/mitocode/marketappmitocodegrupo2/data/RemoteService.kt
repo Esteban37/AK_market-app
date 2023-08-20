@@ -37,4 +37,9 @@ interface RemoteService{
 
     @GET("/api/usuarios/renueva-token")
     suspend fun refreshToken() : Response<WrappedResponse<UserRemote>>
+
+    @POST("/api/compras/nueva-compra")
+    suspend fun savePurchasedProductsOrder(
+        @Header("Authorization") authorization:String,
+        @Body request: RegisterPurchaseRequest) : WrappedResponse<Nothing>
 }

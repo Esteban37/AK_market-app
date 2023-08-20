@@ -29,7 +29,7 @@ class CategoryRepository @Inject constructor(
 
             //Guardar los datos localmente
             if(countRemote > countLocal)
-            categoryLocallyDataSource.save(categoriesRemote.data.toLocalModel())
+                categoryLocallyDataSource.save(categoriesRemote.data.toLocalModel())
 
         }
 

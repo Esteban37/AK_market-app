@@ -37,5 +37,24 @@
     <string name="fragment_register_categories_galery">Galeria</string>
     <string name="fragment_register_categories_save">Grabar</string>
     <string name="menu_maps">Mapas</string>
+    <string name="menu_shopping">Mis compras</string>
+
+    <string name="fragment_detail_product_feature_title">Características</string>
+
+    <!-- Base Dialog -->
+    <string name="dialog_message">Mensaje del dialogo</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_accept">Aceptar</string>
+
+    <!-- Dialog update product -->
+    <string name="dialog_update_title">Actualiza tu producto</string>
+    <string name="dialog_close">Salir</string>
+    <string name="dialog_update">Actualizar</string>
+    <string name="dialog_update_amount">Cantidad</string>
+
+    <!-- Dialog payment -->
+    <string name="dialog_payment_order">Orden de compra:</string>
+    <string name="dialog_payment_message">Enhorabuena! Su compra se registró correctamente</string>
+    <string name="dialog_payment_title">Felicitaciones</string>
 
 </resources>

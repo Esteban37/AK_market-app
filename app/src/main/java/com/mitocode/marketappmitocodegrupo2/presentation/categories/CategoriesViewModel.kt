@@ -1,17 +1,12 @@
 package com.mitocode.marketappmitocodegrupo2.presentation.categories
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.mitocode.marketappmitocodegrupo2.data.model.Result
 import com.mitocode.marketappmitocodegrupo2.domain.usescase.GetCategories
 import com.mitocode.marketappmitocodegrupo2.domain.usescase.SaveCategories
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 @HiltViewModel

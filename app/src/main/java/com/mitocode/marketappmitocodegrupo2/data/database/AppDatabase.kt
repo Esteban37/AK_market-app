@@ -6,11 +6,13 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import dagger.hilt.android.qualifiers.ApplicationContext
 
-@Database(entities = [DbCategory::class], version = 1)
+@Database(entities = [DbCategory::class, DbShoppingCart::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
 
     //Definir los daos
     abstract fun categoryDao() : CategoryDao
+
+    abstract fun shoppingCartDao(): ShoppingCartDao
 
     //var instanceDb :  AppDatabase? = null
 
